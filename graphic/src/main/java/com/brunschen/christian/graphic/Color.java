@@ -3,8 +3,8 @@ package com.brunschen.christian.graphic;
 public class Color {
   
   public static final Color BLACK = new Color(0, 0, 0);
-  public static final Color DARK_GRAY = new Color(0.33f, 0.33f, 0.33f);
-  public static final Color LIGHT_GRAY = new Color(0.66f, 0.66f, 0.66f);
+  public static final Color DARK_GRAY = new Color(1f/3f, 1f/3f, 1f/3f);
+  public static final Color LIGHT_GRAY = new Color(2f/3f, 2f/3f, 2f/3f);
   public static final Color WHITE = new Color(1, 1, 1);
   public static final Color RED = new Color(1, 0, 0);
   public static final Color GREEN = new Color(0, 1, 0);
@@ -25,9 +25,9 @@ public class Color {
   }
 
   public Color(float r, float g, float b) {
-    this(r, g, b, 1);
+    this(r, g, b, 1f);
   }
-  
+
   public static Color hex(int r, int g, int b, int a) {
     return new Color(r/255f, g/255f, b/255f, a/255f);
   }
